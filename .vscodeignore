@@ -1,0 +1,15 @@
+.git*
+.github/
+.DS_Store
+*.py
+*.pyc
+__pycache__/
+.theme_schema_cache.json
+extension.toml
+sync_theme.py
+theme_overrides.py
+convert_to_vscode.py
+README.md
+assets/*.png
+!assets/mocha.png
+themes/catppuccin-blur.json

@@ -1,0 +1,40 @@
+{
+  "name": "catppuccin-blur-vscode",
+  "displayName": "Catppuccin Blur",
+  "description": "Catppuccin Mocha and Espresso themes with blur effects for VS Code",
+  "version": "0.1.0",
+  "publisher": "johngagefaulkner",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "catppuccin",
+    "blur",
+    "theme",
+    "mocha",
+    "espresso",
+    "dark"
+  ],
+  "icon": "assets/mocha.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johngagefaulkner/catppuccin-blur-vscode"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Catppuccin Mocha Blur",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catppuccin-blur-mocha-light.json"
+      },
+      {
+        "label": "Catppuccin Espresso Blur",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catppuccin-blur-espresso-light.json"
+      }
+    ]
+  }
+}

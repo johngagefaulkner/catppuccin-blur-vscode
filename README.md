@@ -1,4 +1,39 @@
-# 🌿 Catppuccin Blur for Zed
+# 🌿 Catppuccin Blur for VS Code
+
+> Catppuccin themes with beautiful blur effects, now available for Visual Studio Code!
+
+## 🎨 VS Code Extension
+
+This extension provides two beautiful dark themes with static blur effects for Visual Studio Code:
+
+- **Catppuccin Mocha Blur** - A soft, muted dark theme with warm tones
+- **Catppuccin Espresso Blur** - A deeper, darker theme with rich contrast
+
+Both themes use the "Light" blur level (60% opacity) for a subtle transparency effect.
+
+### Installation
+
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
+3. Search for "Catppuccin Blur" (or install from this repository)
+4. Click Install
+5. Select a theme: `Preferences: Color Theme` → Choose `Catppuccin Mocha Blur` or `Catppuccin Espresso Blur`
+
+### Building from Source
+
+```bash
+# Install dependencies
+npm install -g @vscode/vsce
+
+# Package the extension
+vsce package
+
+# Install the generated .vsix file in VS Code
+```
+
+---
+
+# 🌿 Original Zed Theme
 
 > **Note**
 > The blur effect may not work on all operating systems. This is a limitation of Zed's window transparency implementation, not a theme issue. If you experience issues with blur, please report them to the [Zed repository](https://github.com/zed-industries/zed).
@@ -104,3 +139,14 @@ To customize the theme, edit the `THEME_OVERRIDES` dictionary in `theme_override
     # Add more overrides here
 }
 ```
+
+### Converting to VS Code
+
+To regenerate the VS Code themes from the Zed theme file:
+
+```bash
+python3 convert_to_vscode.py
+```
+
+This will extract the Mocha and Espresso [Light] themes from `themes/catppuccin-blur.json` and convert them to VS Code format in `themes/catppuccin-blur-mocha-light.json` and `themes/catppuccin-blur-espresso-light.json`.
+
